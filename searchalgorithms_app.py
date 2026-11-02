@@ -28,8 +28,7 @@ def fitness(chromosome: str) -> int:
 
 
 def create_chromosome(rng: random.Random) -> str:
-return ''.join(rng.choice('01') for _ in range(CHROMOSOME_LENGTH))
-
+    return ''.join(rng.choice('01') for _ in range(CHROMOSOME_LENGTH))
 
 def tournament_selection(population: list[str], rng: random.Random, size: int = 3) -> str:
     return max(rng.sample(population, k=size), key=fitness)
