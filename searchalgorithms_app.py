@@ -7,8 +7,6 @@ CHROMOSOME_LENGTH = 80
 TARGET_ONES = 50
 GENERATIONS = 50
 MAX_FITNESS = 80
-
-# Fixed experiment settings (no sidebar inputs)
 RANDOM_SEED = 42
 CROSSOVER_RATE = 0.80
 MUTATION_RATE = 0.01
